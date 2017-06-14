@@ -8,16 +8,16 @@
 
 SimpleConfig.for :application do
   set :app_name, 'icare'
-  set :repository_url, 'http://github.com/diowa/icare'
+  set :repository_url, 'http://github.com/yasir-lateef/icare'
 
   set :advertising, true
-  set :demo_mode, true
+  set :demo_mode, false
   set :base_url, 'localhost:3000'
   set :single_process_mode, true
 
-  set :currency, '.00 €'
+  set :currency, '.00 PKR'
   set :fuel_consumption, 0.12
-  set :fuel_currency, '€'
+  set :fuel_currency, 'PKR'
 
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
 
