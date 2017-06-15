@@ -7,7 +7,7 @@
 # SET SENSITIVE DATA ONLY IN 'local.rb'
 
 SimpleConfig.for :application do
-  set :app_name, 'icare'
+  set :app_name, 'javoshare'
   set :repository_url, 'http://github.com/yasir-lateef/icare'
 
   set :advertising, true
@@ -27,9 +27,9 @@ SimpleConfig.for :application do
   set :user_image_placeholder, 'https://fbstatic-a.akamaihd.net/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif'
 
   group :facebook do
-    set :namespace, 'FACEBOOK_NAMESPACE'
-    set :app_id, 'FACEBOOK_APP_ID'
-    set :secret, 'FACEBOOK_SECRET'
+    set :namespace, 'JavoShare'
+    set :app_id, '287362618382777'
+    set :secret, '38cd0c61eecb5b8ca573e4ad70019cb1'
     set :scope, 'public_profile, publish_actions, user_birthday, user_about_me, user_education_history, user_likes, user_religion_politics, user_work_history'
     set :cache_expiry_time, 7.days
   end

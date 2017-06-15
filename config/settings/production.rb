@@ -4,16 +4,16 @@
 # USE ENVIRONMENT VARIABLES OR 'local.rb' INSTEAD
 
 SimpleConfig.for :application do
-  set :base_url, ENV['APP_BASE_URL']
+  set :base_url, ENV['javoshare.herokuapp.com']
   set :single_process_mode, false
 
   set :google_analytics_id, ENV['GOOGLE_ANALYTICS_ID']
-  set :google_maps_api_key, ENV['GOOGLE_MAPS_API_KEY']
+  set :google_maps_api_key, ENV['AIzaSyBaHBkrA41RPpu_LieZqggteGs8AkJGr0c']
 
   group :facebook do
-    set :namespace, ENV['FACEBOOK_NAMESPACE']
-    set :app_id, ENV['FACEBOOK_APP_ID']
-    set :secret, ENV['FACEBOOK_SECRET']
+    set :namespace, ENV['JavoShare']
+    set :app_id, ENV['287362618382777']
+    set :secret, ENV['38cd0c61eecb5b8ca573e4ad70019cb1']
   end
 
   group :airbrake do
