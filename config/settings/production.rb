@@ -4,7 +4,7 @@
 # USE ENVIRONMENT VARIABLES OR 'local.rb' INSTEAD
 
 SimpleConfig.for :application do
-  set :base_url, ENV['javoshare.herokuapp.com']
+  set :base_url, 'http://javoshare.herokuapp.com'
   set :single_process_mode, false
 
   set :google_analytics_id, ENV['GOOGLE_ANALYTICS_ID']
