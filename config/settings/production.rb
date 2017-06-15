@@ -8,12 +8,12 @@ SimpleConfig.for :application do
   set :single_process_mode, false
 
   set :google_analytics_id, ENV['GOOGLE_ANALYTICS_ID']
-  set :google_maps_api_key, ENV['GOOGLE_MAPS_API_KEY']
+  set :google_maps_api_key, 'AIzaSyBaHBkrA41RPpu_LieZqggteGs8AkJGr0c'
 
   group :facebook do
-    set :namespace, ENV['FACEBOOK_NAMESPACE']
-    set :app_id, ENV['FACEBOOK_APP_ID']
-    set :secret, ENV['FACEBOOK_SECRET']
+    set :namespace, 'javoshare'
+    set :app_id, '1869429803382196'
+    set :secret, '69bcdd8599c70a06fc1201ec42141b27'
   end
 
   group :airbrake do
