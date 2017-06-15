@@ -1,13 +1,13 @@
 {
-  "name": "icare",
-  "description": "Open Source Carpooling Platform. icare requires a valid Facebook application, check our Wiki for more information.",
+  "name": "javoshare",
+  "description": "A Carpooling Platform.",
   "keywords": [
     "Carpooling",
     "Rails",
     "MongoDB"
   ],
-  "website": "http://icare.diowa.com/",
-  "repository": "https://github.com/diowa/icare",
+  "website": "http://javoshare.herokuapp.com/",
+  "repository": "https://github.com/yasir-lateef/icare",
   "success_url": "/",
   "scripts": {
     "postdeploy": "bundle exec rake db:mongoid:create_indexes"
@@ -15,33 +15,16 @@
   "env": {
     "RAILS_ENV": "production",
     "RAILS_SERVE_STATIC_FILES": "enabled",
-    "APP_BASE_URL": {
-      "description": "Pick up a name for your application like \"yourname\" and enter here https://yourname.herokuapp.com"
-    },
+    "APP_BASE_URL": "http://javoshare.herokuapp.com",
     "RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR": {
       "description": "Reduces RGenGC's memory consumption.",
       "value": "1.3"
     },
-    "GOOGLE_MAPS_API_KEY": {
-      "description": "A valid Google Maps JavaScript API key. Check our Wiki for more information.",
-      "value": "AIzaSyBaHBkrA41RPpu_LieZqggteGs8AkJGr0c"
-    },
-    "FACEBOOK_NAMESPACE": {
-      "description": "The namespace of your Facebook application. Check our Wiki for more information.",
-      "value": "javoshare"
-    },
-    "FACEBOOK_APP_ID": {
-      "description": "The ID of your Facebook application. Check our Wiki for more information.",
-      "value": "1869429803382196"
-    },
-    "FACEBOOK_SECRET": {
-      "description": "The secret of your Facebook application. Check our Wiki for more information.",
-      "value": "69bcdd8599c70a06fc1201ec42141b27"
-    },
-    "NEW_RELIC_APP_NAME": {
-      "description": "Sets the name of your application as it will appear on the New Relic dashboard.",
-      "value": "icare"
-    },
+    "GOOGLE_MAPS_API_KEY": "AIzaSyBaHBkrA41RPpu_LieZqggteGs8AkJGr0c",
+    "FACEBOOK_NAMESPACE": "javoshare",
+    "FACEBOOK_APP_ID": "1869429803382196",
+    "FACEBOOK_SECRET": "69bcdd8599c70a06fc1201ec42141b27",
+    "NEW_RELIC_APP_NAME": "icare",
     "AIRBRAKE_PROJECT_ID": {
       "description": "Airbrake Project ID. (OPTIONAL)",
       "required": false
